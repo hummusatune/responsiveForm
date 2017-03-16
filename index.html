@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>The Code Review Form</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			
+			<header>
+				<h2>The Code Review</h2>
+			</header>
+
+			<section>
+				<h3>Signup for our newsletter</h3>
+				<p>Get the latest news on how your code is doing right in your inbox</p>
+			</section>
+
+			<hr />
+
+			<form action="#" method="get">
+	  		<fieldset>
+	  			<legend>Contact Information</legend>
+			        <label class="label req" for="fullname">Full Name</label>
+			        <input type="text" name="fullname" id="fullname" placeholder="Required" required="required" />
+			      
+			        <label class="label" for="email">Email</label>
+			        <input type="email" name="email" id="email" placeholder="Required" required="required" />
+
+			        <label class="label" for="phone">Phone Number</label>
+			        <input type="tel" name="phone" id="phone" x-autocompletetype="tel"/>
+
+			        <label class="label" for="streetaddress">Street Address</label>
+			        <input type="address" name="streetaddress" id="streetaddress" x-autocompletetype="???"/>
+
+			        <label class="label" for="city">City</label>
+			        <input type="city" name="city" id="city" x-autocompletetype="???"/>
+
+			        <label class="label" for="state">State</label>
+			        <select name="state" id="state" x-autocompletetype="state-name">
+			          <option selected="selected">Choose State</option>
+			          <option>Alabama</option>
+			          <option>Alaska</option>
+			          <option>Arizona</option>
+			          <option>Arkansas</option>
+			          <option>California</option>
+			          <option>Colorado</option>
+			          <option>Connecticut</option>
+			          <option>Delaware</option>
+			          <option>Florida</option>
+			          <option>Georgia</option>
+			          <option>Hawaii</option>
+			          <option>Idaho</option>
+			          <option>Illinois</option>
+			          <option>Indiana</option>
+			          <option>Iowa</option>
+			          <option>Kansas</option>
+			          <option>Kentucky</option>
+			          <option>Louisiana</option>
+			          <option>Maine</option>
+			          <option>Maryland</option>
+			        </select>
+
+			        <label class="label" for="zip">Zip Code</label>
+			        <input type="zipcode" name="zipcode" id="zipcode" x-autocompletetype="???"/>
+
+			        <hr />
+			   </fieldset>
+
+			  <fieldset>
+	  			<legend>Newsletter</legend>
+
+			        <p>Select the newsletters you would like to receive:</p>
+
+
+
+			        <p>Newsletter format:</p>
+
+		          <input type="radio" name="format" value="html" id="formatHTML" required="required"/>
+		          <label for="formatHTML" class="star">
+		            <span>HTML</span>
+		          </label>
+		          <input type="radio" name="format" value="plain" id="formatPlain" required="required"/>
+		          <label for="formatPlain" class="star">
+		            <span>Plain Text</span>
+		          </label>
+
+			  	</fieldset>
+		
+			      <button class="button" name="signup">Sign Up</button>
+			
+			</form>
+
+
+		</div>
+		
+		<footer>
+			
+		</footer>>
+	</body>
+</html>
