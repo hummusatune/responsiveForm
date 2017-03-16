@@ -23,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Oswald', sans-serif;
+  font: 2em/1 'Oswald', sans-serif;
   color: #333;
 }
 
@@ -36,14 +36,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-fieldset {
-  border: none;
-}
-
-button {
-
 }
 
 /* ======================
@@ -60,4 +52,41 @@ header {
 header h2 {
   color: #fff;
   text-transform: uppercase;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h3 {
+  margin: 0.7em 0;
+}
+
+/* ======================
+Form Styles
+======================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font: 2em/1 'Oswald', sans-serif;
+  color: #333;
+  margin: 0.5em 0;
+}
+
+button {
+  background: #725ac1;
+  color: #fff;
+  font: 1em/1.5 'Oswald', sans-serif;
+  padding: 15px 100px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
