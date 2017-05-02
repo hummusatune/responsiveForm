@@ -22,10 +22,14 @@ html {
 }
 
 h1,
-h2,
+h2 {
+  font: 2.5em/1 'Oswald', sans-serif;
+  color: #fafbfd;
+}
+
 h3,
 h4 {
-  font: 2em/1 'Oswald', sans-serif;
+  font: 1.5em/1 'Oswald', sans-serif;
   color: #fafbfd;
 }
 
@@ -76,6 +80,8 @@ form {
 
 fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 label {
@@ -94,11 +100,33 @@ input {
   color: #211d38;
 }
 
+select#state {
+  padding: 1em;
+  width: 90%;
+  color: #fafbfd;
+}
+
+textarea:focus, input:focus {
+  border: 2px solid #900;
+}
+
+.contactInfo input {
+  width: 90%;
+}
+
+.contactInfo,
+.newsletterType {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
+  /*background: #18152d;*/
   background: #9793e3;
   color: #fafbfd;
   font: 1em/1.5 'Oswald', sans-serif;
-  padding: 15px 100px;
+  margin: 0 auto;
+  padding: 20px 100px;
   outline: none;
   border: none;
   border-radius: 5px;
