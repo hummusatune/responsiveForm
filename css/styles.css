@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Quattrocento:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,400i,700');
 
 /* ======================
 Base Styles
@@ -35,7 +35,7 @@ h4 {
 
 body {
   background: #211d38;
-  font: 1em/1.5 'Quattrocento', serif;
+  font: 1em/1.5 'Lato', serif;
   color: #fafbfd;
   position: relative;
 }
@@ -76,6 +76,7 @@ Form Styles
 form {
   display: flex;
   flex-direction: column;
+  margin: 1em;
 }
 
 fieldset {
@@ -86,7 +87,9 @@ fieldset {
 
 label {
   color: #9793e3;
-  font: normal normal normal 1em/1.4 'Quattrocento', serif;
+  font: normal normal normal 1em/1.4 'Lato', serif;
+  margin: 0.7em 0;
+  text-transform: uppercase;
 }
 
 legend {
@@ -96,22 +99,42 @@ legend {
 }
 
 input {
-  background: #fafbfd;
-  color: #211d38;
-}
-
-select#state {
-  padding: 1em;
-  width: 90%;
+  background: #18152d;
   color: #fafbfd;
+  font: normal normal normal 1em/1.4 'Lato', serif;
+  padding: 0 0 0 0.5em;
 }
 
-textarea:focus, input:focus {
-  border: 2px solid #900;
+input:focus {
+  outline: none;
+}
+
+.contactInfo select#state {
+  padding: 1em;
+  width: 100%;
+  color: #fafbfd;
+  background: #18152d;
+  border: none;
+  height: 3em;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+}
+
+.contactInfo input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bcbbc7;
+  text-align: right;
+  padding: 0 0.5em 0 0;
 }
 
 .contactInfo input {
-  width: 90%;
+  width: 100%;
+  border: none;
+  min-height: 3em;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
 }
 
 .contactInfo,
@@ -120,15 +143,46 @@ textarea:focus, input:focus {
   flex-direction: column;
 }
 
+input#otherTopics {
+  width: 100%;
+  border: none;
+  min-height: 8em;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+}
+
+fieldset.newsletterType {
+  margin: 1em 0 2em;
+}
+
+.newsletterType ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletterType li {
+  padding: 0.3em 0;
+}
+
 button {
-  /*background: #18152d;*/
-  background: #9793e3;
+  background: #2cdcf9;
   color: #fafbfd;
   font: 1em/1.5 'Oswald', sans-serif;
   margin: 0 auto;
-  padding: 20px 100px;
+  padding: 1em 7.6em;
   outline: none;
   border: none;
   border-radius: 5px;
-  width: 50%;
+}
+
+/* ======================
+Footer Styles
+======================= */
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
 }
