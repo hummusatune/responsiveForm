@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Lato:400,400i,700');
+
+/* ======================
+Base Styles
+======================= */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  max-width: 1025px;
+  margin: 0 auto;
+  background: #211d38;
+}
+
+h1,
+h2 {
+  font: 2.5em/1 'Oswald', sans-serif;
+  color: #fafbfd;
+}
+
+h3,
+h4 {
+  font: 1.5em/1 'Oswald', sans-serif;
+  color: #fafbfd;
+}
+
+body {
+  background: #211d38;
+  font: 1em/1.5 'Lato', serif;
+  color: #fafbfd;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================
+Header Styles
+======================= */
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: #2cdcf9;
+  text-align: center;
+}
+
+header h2 {
+  color: #fafbfd;
+  text-transform: uppercase;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h3 {
+  margin: 0.7em 0;
+  color: #9793e3;
+}
+
+/* ======================
+Form Styles
+======================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  color: #9793e3;
+  font: normal normal normal 1em/1.4 'Lato', serif;
+  margin: 0.7em 0;
+  text-transform: uppercase;
+}
+
+legend {
+  font: 2em/1 'Oswald', sans-serif;
+  color: #fafbfd;
+  margin: 0.5em 0;
+}
+
+input {
+  background: #18152d;
+  color: #fafbfd;
+  font: normal normal normal 1em/1.4 'Lato', serif;
+  padding: 0 0 0 0.5em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.contactInfo select#state {
+  padding: 1em;
+  width: 100%;
+  color: #fafbfd;
+  background: #18152d;
+  border: none;
+  height: 3em;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+}
+
+.contactInfo input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bcbbc7;
+  text-align: right;
+  padding: 0 0.5em 0 0;
+}
+
+.contactInfo input {
+  width: 100%;
+  border: none;
+  min-height: 3em;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+}
+
+.contactInfo,
+.newsletterType {
+  display: flex;
+  flex-direction: column;
+}
+
+input#otherTopics {
+  width: 100%;
+  border: none;
+  min-height: 8em;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
+}
+
+fieldset.newsletterType {
+  margin: 1em 0 2em;
+}
+
+.newsletterType ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletterType li {
+  padding: 0.3em 0;
+}
+
+button {
+  background: #2cdcf9;
+  color: #fafbfd;
+  font: 1em/1.5 'Oswald', sans-serif;
+  margin: 0 auto;
+  padding: 1em 7.6em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ======================
+Footer Styles
+======================= */
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+}
