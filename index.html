@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<title>The Code Review Form</title>
 		<link rel="stylesheet" href="css/normalize.css">
@@ -21,7 +21,7 @@
 				<hr />
 			</section>
 
-			<form>
+			<form id="newsletterForm">
 	  		<fieldset class="contactInfo">
 	  			<legend>Contact Information</legend>
 
@@ -35,10 +35,10 @@
 			        <input type="tel" name="phone" id="phone"/>
 
 			        <label for="streetaddress">Street Address</label>
-			        <input type="address" name="streetaddress" id="streetaddress"/>
+			        <input type="text" name="streetaddress" id="streetaddress"/>
 
 			        <label for="city">City</label>
-			        <input type="city" name="city" id="city" />
+			        <input type="text" name="city" id="city" />
 
 			        <label for="state">State</label>
 			        <select name="state" id="state" x-autocompletetype="state-name">
@@ -95,8 +95,8 @@
 						<option value="WY">Wyoming</option>
 			        </select>
 
-			        <label for="zip">Zip Code</label>
-			        <input type="zipcode" name="zipcode" id="zipcode" />
+			        <label for="zipcode">Zip Code</label>
+			        <input type="text" name="zipcode" id="zipcode" />
 
 			        <hr />
 			   </fieldset>
@@ -107,15 +107,15 @@
 			        <p>Select the newsletters you would like to receive:</p>
 			        <ul>
 			        	<li>
-			        		<input type="checkbox" id="htmlNews">
+			        		<input type="checkbox" name="htmlNews" value="html" id="htmlNews">
             				<label for="htmlNews">HTML News</label>
             			</li>
             			<li>
-            				<input type="checkbox" id="cssNews">
+            				<input type="checkbox" name="cssNews" value="css" id="cssNews">
 		            		<label for="cssNews">CSS News</label>
 		            	</li>
 		            	<li>
-		            		<input type="checkbox" id="jsNews">
+		            		<input type="checkbox" name="jsNews" value="js" id="jsNews">
 		            		<label for="jsNews">JavaScript News</label>
 		            	</li>
 		            </ul>
@@ -123,22 +123,22 @@
 			        <p>Newsletter format:</p>
 			        <ul>
 			        	<li>
-					        <input type="radio" name="format" value="html" id="formatHTML" />
+					        <input type="radio" name="formatHTML" value="html" id="formatHTML" />
 					        <label for="formatHTML"><span>HTML</span></label>
 			        	</li>
 			        	<li>
-					        <input type="radio" name="format" value="plain" id="formatPlain" />
+					        <input type="radio" name="formatPlain" value="plain" id="formatPlain" />
 					        <label for="formatPlain" ><span>Plain Text</span></label>
 						</li>
 					</ul>
 			        <p>Other topics you'd like to read about:</p>
-			        <input type="text" name="otherTopics" id="otherTopics" />
+			        <textarea name="otherTopics" id="otherTopics"></textarea>
 
 			  	</fieldset>
 		
-			    <button name="signup">Sign Up</button>
+			    <button type="submit" form="newsletterForm" value="Submit">Sign Up</button>
+			
 			</form>
-
 
 		</div>
 		
