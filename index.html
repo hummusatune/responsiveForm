@@ -27,19 +27,19 @@
 	  			<ul>
 	  				<li>
 				        <label for="fullname">Full Name</label>
-				        <input type="text" name="fullname" id="fullname" placeholder="Required"/>
+				        <input type="text" name="fullname" id="fullname" placeholder="Required" required />
 			      	</li>
 			      	<li>
 				        <label for="email">Email</label>
-				        <input type="email" name="email" id="email" placeholder="Required"/>
+				        <input type="email" name="email" id="email" placeholder="Required" required />
 			        </li>
 			        <li>
 				        <label for="phone">Phone Number</label>
-				        <input type="tel" name="phone" id="phone"/>
+				        <input type="tel" name="phone" id="phone" placeholder="I promise I won't call you"/>
 			        </li>
 			        <li>
 				        <label for="streetaddress">Street Address</label>
-				        <input type="text" name="streetaddress" id="streetaddress"/>
+				        <input type="text" name="streetaddress" id="streetaddress" placeholder="1313 Mockingbird Lane"/>
 			        </li>
 			        <li>
 				        <label for="city">City</label>
@@ -47,7 +47,7 @@
 			        </li>
 			        <li>
 				        <label for="state">State</label>
-				        <select name="state" id="state" x-autocompletetype="state-name">
+				        <select name="state" id="state">
 				          <option selected="selected">Choose State</option>
 				          	<option value="AL">Alabama</option>
 							<option value="AK">Alaska</option>
@@ -105,7 +105,8 @@
 				        <label for="zipcode">Zip Code</label>
 				        <input type="text" name="zipcode" id="zipcode" />
 			        </li>
-			        <hr />
+			    </ul>
+			    <hr />
 			   </fieldset>
 
 			  <fieldset class="newsletterType">

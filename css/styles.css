@@ -55,7 +55,7 @@ hr {
 }
 
 /* ======================
-Header Styles
+Header
 ======================= */
 
 header {
@@ -80,7 +80,7 @@ header h2 {
 }
 
 /* ======================
-Form Styles
+Base form styles
 ======================= */
 
 form {
@@ -133,6 +133,10 @@ input[type="checkbox"]:focus {
   outline: 3px solid #2cdcf9;
 }
 
+/* ======================
+Fieldset contactInfo styles
+======================= */
+
 .contactInfo ul {
   list-style-type: none;
   margin: 0;
@@ -179,15 +183,9 @@ input[type="checkbox"]:focus {
   flex-direction: column;
 }
 
-textarea {
-  width: 100%;
-  border: none;
-  min-height: 8em;
-  border-radius: 5px;
-  -moz-box-shadow:    inset 0 0 10px #000;
-  -webkit-box-shadow: inset 0 0 10px #000;
-  box-shadow:         inset 0 0 10px #000;
-}
+/* ======================
+Fieldset newsletterType styles
+======================= */
 
 fieldset.newsletterType {
   margin: 1em 0 2em;
@@ -201,6 +199,16 @@ fieldset.newsletterType {
 
 .newsletterType li {
   padding: 0.3em 0;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  min-height: 8em;
+  border-radius: 5px;
+  -moz-box-shadow:    inset 0 0 10px #000;
+  -webkit-box-shadow: inset 0 0 10px #000;
+  box-shadow:         inset 0 0 10px #000;
 }
 
 button {
@@ -224,7 +232,7 @@ button:hover {
 }
 
 /* ======================
-Footer Styles
+Footer
 ======================= */
 
 footer {
@@ -234,7 +242,7 @@ footer {
 }
 
 /* ======================
-Media Queries
+Media queries
 ======================= */
 
 @media (min-width: 768px) {
