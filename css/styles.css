@@ -133,6 +133,16 @@ input[type="checkbox"]:focus {
   outline: 3px solid #2cdcf9;
 }
 
+.contactInfo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contactInfo li {
+  margin: 0.7em 0;
+}
+
 .contactInfo select#state {
   padding: 1em;
   width: 100%;
@@ -140,6 +150,7 @@ input[type="checkbox"]:focus {
   background: #18152d;
   border: none;
   height: 3em;
+  margin: 0.7em 0;
   -moz-box-shadow:    inset 0 0 10px #000;
   -webkit-box-shadow: inset 0 0 10px #000;
   box-shadow:         inset 0 0 10px #000;
@@ -156,6 +167,7 @@ input[type="checkbox"]:focus {
   border: none;
   min-height: 3em;
   border-radius: 5px;
+  margin: 0.7em 0;
   -moz-box-shadow:    inset 0 0 10px #000;
   -webkit-box-shadow: inset 0 0 10px #000;
   box-shadow:         inset 0 0 10px #000;
@@ -228,6 +240,16 @@ Media Queries
 @media (min-width: 768px) {
   form {
     margin: 0;
+  }
+
+  .contactInfo li {
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+  }
+
+  .contactInfo label {
+    width: 40%;
   }
 
   button {
